@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Malgun Gothic', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #74abe2, #5563c1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.game-container {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    width: 90%;
+    max-width: 450px;
+    text-align: center;
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+h1 { color: #333; font-size: 1.8rem; }
+h2 { color: #444; }
+
+input {
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    text-align: center;
+}
+
+input:focus { border-color: #5563c1; }
+
+button {
+    padding: 12px;
+    background: #5563c1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover { background: #404db0; }
+
+/* 게임 화면 */
+.game-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.timer { color: #e74c3c; }
+.score { color: #2ecc71; }
+
+#quiz-container {
+    background: #f9f9f9;
+    padding: 40px 20px;
+    border-radius: 12px;
+    min-height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #eee;
+}
+
+#question-text {
+    font-size: 1.3rem;
+    font-weight: bold;
+    word-break: keep-all;
+    line-height: 1.5;
+}
+
+.quiz-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.ox-btn {
+    flex: 1;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.btn-o { background: #2ecc71; }
+.btn-o:hover { background: #27ae60; }
+.btn-x { background: #e74c3c; }
+.btn-x:hover { background: #c0392b; }
+
+/* 랭킹 화면 */
+.ranking-box {
+    background: #f5f6fa;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: left;
+}
+
+.ranking-box h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#ranking-list {
+    padding-left: 25px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+#ranking-list li {
+    margin-bottom: 5px;
+    font-weight: 500;
+}
